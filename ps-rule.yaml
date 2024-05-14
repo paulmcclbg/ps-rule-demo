@@ -2,6 +2,12 @@ binding:
   targetType:
   - type
 
+include:
+  module:
+  - 'PSRule.Rules.Azure'
+  path:
+  - '.ps-rule/'
+
 input:
   pathIgnore:
   - '*'
