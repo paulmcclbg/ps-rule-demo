@@ -6,6 +6,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
+      - name: Login via Az module
+        uses: azure/login@v2
+        with:
+          creds: ${{secrets.AZURE_CREDENTIALS}}
+          enable-AzPSSession: true 
+        
+      - name: Run Azure PowerShell inline script
+        uses: azure/powershell@v2
+        with:
+          inlineScript: |
+            Install-Module PSRule.Rules.Azure -Repository "PSGallery" -AllowClobber -Confirm:$false -Force
+            Export-AzRuleData            
+          azPSVersion: "latest"
+      
       - name: Run PSRule analysis
         uses: microsoft/ps-rule@v2.9.0
         with:
