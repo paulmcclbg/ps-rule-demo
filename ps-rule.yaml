@@ -2,10 +2,6 @@ binding:
   targetType:
   - type
 
-include:
-  path:
-  - '.ps-rule/'
-
 input:
   pathIgnore:
   - '*'
@@ -14,6 +10,3 @@ input:
 output:
   culture:
   - 'en-GB'
-
-rule:
-  includeLocal: true
