@@ -7,3 +7,6 @@ metadata:
 spec:
   rule:
   - 'Azure.Resource.UseTags'
+  if:
+    type: '.'
+    equals: 'TestType'
