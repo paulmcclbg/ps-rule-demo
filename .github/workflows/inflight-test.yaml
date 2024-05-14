@@ -1,8 +1,10 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: ps-rule-inflight-test
+run-name: Analyse Subscription
 on: [push]
 jobs:
   run-ps-rule:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Run PSRule analysis
+        uses: microsoft/ps-rule@v2.9.0
