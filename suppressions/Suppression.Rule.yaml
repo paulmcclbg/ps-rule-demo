@@ -8,5 +8,8 @@ spec:
   rule:
   - 'Azure.Resource.UseTags'
   if:
-    name: '.'
-    equals: 'NetworkWatcherRG'
+    anyOf:
+    - name: '.'
+      equals: 'NetworkWatcherRG'
+    - name: '.'
+      equals: 'jake-test-vnet-01'
