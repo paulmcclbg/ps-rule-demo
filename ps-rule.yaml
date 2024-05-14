@@ -1,10 +1,6 @@
 binding:
   targetType:
   - type
-
-include:
-  path:
-  - 'suppressions/'
   
 input:
   pathIgnore:
@@ -14,3 +10,7 @@ input:
 output:
   culture:
   - 'en-GB'
+
+suppression:
+  Azure.Resource.UseTags:
+  - '*'
