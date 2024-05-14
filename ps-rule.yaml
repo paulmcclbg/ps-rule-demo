@@ -10,3 +10,6 @@ input:
 output:
   culture:
   - 'en-GB'
+
+rule:
+  includeLocal: true
