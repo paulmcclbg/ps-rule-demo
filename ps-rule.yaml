@@ -13,4 +13,4 @@ output:
 
 suppression:
   Azure.Resource.UseTags:
-  - '*'
+  - 'NetworkWatcherRG'
