@@ -1,7 +1,11 @@
 binding:
   targetType:
   - type
-  
+
+include:
+  path:
+  - 'suppressions/'
+
 input:
   pathIgnore:
   - '*'
