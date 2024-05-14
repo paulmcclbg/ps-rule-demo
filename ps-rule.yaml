@@ -1,0 +1,17 @@
+binding:
+  targetType:
+  - type
+
+include:
+  module:
+  - 'PSRule.Rules.Azure'
+
+input:
+  pathIgnore:
+  - '*'
+  - '!c46d8dcf-caab-4b8f-b4ce-b4b003271842.json'
+  - '!dd954fbc-e5aa-463a-90d5-bd799cf06ea3.json'
+
+output:
+  culture:
+  - 'en-GB'
