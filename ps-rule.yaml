@@ -3,8 +3,6 @@ binding:
   - type
 
 include:
-  module:
-  - 'PSRule.Rules.Azure'
   path:
   - '.ps-rule/'
 
