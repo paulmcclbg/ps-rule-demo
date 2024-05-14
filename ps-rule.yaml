@@ -14,7 +14,3 @@ input:
 output:
   culture:
   - 'en-GB'
-
-suppression:
-  Azure.Resource.UseTags:
-  - 'NetworkWatcherRG'
